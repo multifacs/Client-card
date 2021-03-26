@@ -58,3 +58,16 @@
 }
 
 
+<span>Login:</span>
+<input id="login" v-model="login">
+<span>Password:</span>
+<input v-model="password">
+<input class="button" type="submit" value="Submit">
+
+<form @submit.prevent="onSubmit">
+  <span>Login:</span>
+  <input id="login" v-model="login" />
+  <span>Password:</span>
+  <input v-model="password" />
+  <input type="submit" value="Submit" />
+</form>

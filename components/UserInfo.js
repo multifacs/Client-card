@@ -2,11 +2,11 @@ app.component("user-info", {
   props: {
     user: {
       type: String,
-      required: true
+      required: true,
     },
     users: {
       type: Array,
-      required: true
+      required: true,
     },
   },
   template:
@@ -15,7 +15,10 @@ app.component("user-info", {
 <div class="user">
   <div class="container">
     <div class="user__inner">
-      <img class="photo" :src="photo">
+      <div class="photo__cage">
+        <img class="photo" :src="photo">
+        <button class="photo__button">Редактировать</button>
+      </div>
       <div class="info">
         <div class="info__header">
           <h3>Информация</h3>
@@ -119,7 +122,11 @@ app.component("user-info", {
     `,
   data() {
     return {
-      photos: ["assets\\images\\photo.jpg", "assets\\images\\photo2.jpg", "assets\\images\\photo3.jpg"],
+      photos: [
+        "assets\\images\\photo.jpg",
+        "assets\\images\\photo2.jpg",
+        "assets\\images\\photo3.jpg",
+      ],
       user_ids: ["001", "002", "003"],
 
       faculty: "Институт информационных технологий, математики и механики",
@@ -136,33 +143,31 @@ app.component("user-info", {
 
       //login: "s1xxxxxx1",
       emails: ["kiwi0tails@gmail.com", "kpasha@yahoo.com", "mkate@gmail.com"],
-      sexes: ["Мужской","Мужской","Женский"],
-      birthdays: ["9 января","10 января","18 декабря"],
+      sexes: ["Мужской", "Мужской", "Женский"],
+      birthdays: ["9 января", "10 января", "18 декабря"],
 
       phone_nums: ["+79875652771", "+79012523498", "+79524004561"],
     };
   },
-  methods: {
-
-  },
+  methods: {},
   computed: {
     id() {
-      return this.user_ids[this.users.indexOf(this.user)]
+      return this.user_ids[this.users.indexOf(this.user)];
     },
     photo() {
-      return this.photos[this.users.indexOf(this.user)]
+      return this.photos[this.users.indexOf(this.user)];
     },
     email() {
-      return this.emails[this.users.indexOf(this.user)]
+      return this.emails[this.users.indexOf(this.user)];
     },
     sex() {
-      return this.sexes[this.users.indexOf(this.user)]
+      return this.sexes[this.users.indexOf(this.user)];
     },
     phone() {
-      return this.phone_nums[this.users.indexOf(this.user)]
+      return this.phone_nums[this.users.indexOf(this.user)];
     },
     birthday() {
-      return this.birthdays[this.users.indexOf(this.user)]
-    }
-  }
+      return this.birthdays[this.users.indexOf(this.user)];
+    },
+  },
 });

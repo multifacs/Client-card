@@ -127,13 +127,38 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
+.photo__cage {
+    width: 200px;
+    height: 350px;
+    margin: 30px;
+}
+
 .photo {
     width: 200px;
     height: 266px;
-    margin: 30px;
+    
     /*content:url(../images/photo.jpg); */
     border: 1px solid rgb(209, 209, 209);
     object-fit:cover;
+}
+
+.photo__button {
+    background-color: rgb(5, 124, 251);
+    width: 200px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.4s linear;
+    outline: none;
+}
+
+.photo__button:hover {
+    background-color: rgb(0, 101, 209);
 }
 
 .info {
