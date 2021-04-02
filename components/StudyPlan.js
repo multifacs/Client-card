@@ -5,7 +5,7 @@ app.component("study-plan", {
     template:
       /*html*/
       `
-      <img src="./assets/images/studyplan.png" class="placeholder">
+      <img src="./assets-card/images/studyplan.png" class="placeholder">
       `,
     data() {
       return {

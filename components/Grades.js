@@ -5,7 +5,7 @@ app.component("grades", {
     template:
       /*html*/
       `
-      <img src="./assets/images/grades.png">
+      <img src="./assets-card/images/grades.png">
       `,
     data() {
       return {

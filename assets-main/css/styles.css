@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+  
+.sticky {
+  height: auto;
+}
+
+.fancybg {
+  background-color: black;
+  background-image: url(/assets-main/img/bg2.jpg);
+  background-size: cover;
+  height: 100vh;
+  
+}
+
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+  color: white;
+}
+
+.ml2 {
+  padding-top: 25px;
+  width: 400px;
+  padding-bottom: 10px;
+}
+
+.team {
+  height: auto;
+}
+
+.bottom {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}

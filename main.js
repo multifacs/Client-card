@@ -50,3 +50,4 @@ const app = Vue.createApp({
     },
   },
 });
+

@@ -5,7 +5,7 @@ app.component("scholarships", {
     template:
       /*html*/
       `
-      <img src="./assets/images/scholarships.png">
+      <img src="./assets-card/images/scholarships.png">
       `,
     data() {
       return {

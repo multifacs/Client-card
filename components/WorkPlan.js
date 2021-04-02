@@ -5,7 +5,7 @@ app.component("work-plan", {
     template:
       /*html*/
       `
-      <img src="./assets/images/workplan.png">
+      <img src="./assets-card/images/workplan.png">
       `,
     data() {
       return {

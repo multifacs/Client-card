@@ -123,9 +123,9 @@ app.component("user-info", {
   data() {
     return {
       photos: [
-        "assets\\images\\photo.jpg",
-        "assets\\images\\photo2.jpg",
-        "assets\\images\\photo3.jpg",
+        "assets-card\\images\\photo.jpg",
+        "assets-card\\images\\photo2.jpg",
+        "assets-card\\images\\photo3.jpg",
       ],
       user_ids: ["001", "002", "003"],
 

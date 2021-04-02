@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets-card/css/style.css" />
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Client card</title>
+    <link
+      rel="shortcut icon"
+      href="assets-card/images/favicon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <form v-on:submit.prevent="onSubmit" class="login__form">
+        <span style="margin-right: 3px;">Логин:</span>
+        <input v-model.trim="login" style="margin-right: 10px;" />
+        <span style="margin-right: 3px;">Пароль:</span>
+        <input v-model.trim="password" type="password" style="margin-right: 3px;"/>
+        <input type="submit" />
+      </form>
+      <div class="workarea">
+        <div class="header">
+          <div class="container">
+            <div class="header__inner">
+              <nav class="nav">
+                <button
+                  v-for="(tab, index) in tabs"
+                  v-bind:key="tab"
+                  v-bind:index="index"
+                  v-bind:class="['tab-button', { active: currentTab === tab }]"
+                  v-on:click="currentTab = tab"
+                >
+                  {{ tab_names[index] }}
+                </button>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="client__name">
+          <div class="container">
+            <p class="name">{{ name }}</p>
+          </div>
+        </div>
+
+        <component v-bind:is="currentTabComponent" :user="user" :users="users"></component>
+      </div>
+    </div>
+
+    <!-- Import App -->
+    <script src="./main.js"></script>
+    <script src="./components/UserInfo.js"></script>
+    <script src="./components/StudyPlan.js"></script>
+    <script src="./components/WorkPlan.js"></script>
+    <script src="./components/Grades.js"></script>
+    <script src="./components/Scholarships.js"></script>
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
+</html>
