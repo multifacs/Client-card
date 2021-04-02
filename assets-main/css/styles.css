@@ -14,7 +14,7 @@ section {
 
 .fancybg {
   background-color: black;
-  background-image: url(/assets-main/img/bg2.jpg);
+  background-image: url(../img/bg2.jpg);
   background-size: cover;
   height: 100vh;
   
