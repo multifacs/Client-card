@@ -1,0 +1,20 @@
+[
+  {
+    "id": 23,
+    "name": "Intel",
+	"img": "img/intel.svg",
+	"url": "https://intel.com"
+  },
+  {
+    "id": 24,
+    "name": "IBS",
+	"img": "img/ibs.jpg",
+	"url": "https://ibs.ru/"
+  },
+  {
+    "id": 25,
+    "name": "OCS",
+	"img": "img/ocs.jpg",
+	"url": "https://www.ocs.ru/"
+  }
+]
